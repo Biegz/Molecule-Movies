@@ -1,0 +1,151 @@
+{% extends "bootstrap/base.html" %}
+{% block content %}
+<div style="display: flex; justify-content: center;">
+  <img src="https://i.imgur.com/73A0fB5.png"/>
+</div>
+
+<div style="display: flex; justify-content: flex-end; padding-right: 20px">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-twitter"></a>
+		<a href="#" class="fa fa-google"></a>
+		<a href="#" class="fa fa-instagram"></a>
+</div>
+
+  <nav class="navbar my-navbar">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/index">Home</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/movies">Movies A-Z</a></li>
+        <li><a href="/actors">Actors A-Z</a></li>
+        <li><a href="/toprated">Top Rated</a></li>
+              </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  
+  <div class="panel-heading"><b>Theaters for selected movie</b></div>
+
+  <!-- Table -->
+  <table class="table">
+    {% for row in theaterData %}
+    <tr>
+        <td>{{row['Name']}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+
+    <style>
+
+.fa {
+  padding: 10px;
+  font-size: 25px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+    .panel > .panel-heading {
+    background-image: none;
+    background-color: #D3D3D3;
+    color: black;
+}
+.my-navbar {
+  background-color: #4d83af;
+  border-color: #ccd5e5;
+  text-align: center;
+}
+.my-navbar .navbar-brand {
+  color: #fff;
+}
+.my-navbar .navbar-brand:hover, .my-navbar .navbar-brand:focus {
+  color: #AAD5FF;
+}
+.my-navbar .navbar-text {
+  color: #262626;
+}
+.my-navbar .navbar-nav > li > a {
+  color: #fff;
+}
+.my-navbar .navbar-nav > li > a:hover, .my-navbar .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color:#385363;
+}
+.my-navbar .navbar-nav > li > .dropdown-menu {
+  background-color: #2894FF;
+}
+.my-navbar .navbar-nav > li > .dropdown-menu > li > a {
+  color: #d7e2e9;
+}
+.my-navbar .navbar-nav > li > .dropdown-menu > li > a:hover,
+.my-navbar .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #fff;
+  background-color: #004182;
+}
+.my-navbar .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #69899f;
+}
+.my-navbar .navbar-nav > .active > a, .my-navbar .navbar-nav > .active > a:hover, .my-navbar .navbar-nav > .active > a:focus {
+  color: #e5dbdb;
+  background-color: #385363;
+}
+.my-navbar .navbar-nav > .open > a, .my-navbar .navbar-nav > .open > a:hover, .my-navbar .navbar-nav > .open > a:focus {
+  color: #e5dbdb;
+  background-color: #425766;
+}
+.my-navbar .navbar-toggle {
+  border-color: #425766;
+}
+.my-navbar .navbar-toggle:hover, .my-navbar .navbar-toggle:focus {
+  background-color: #425766;
+}
+.my-navbar .navbar-toggle .icon-bar {
+  background-color: #d7e2e9;
+}
+.my-navbar .navbar-collapse,
+.my-navbar .navbar-form {
+  border-color: #d7e2e9;
+}
+.my-navbar .navbar-link {
+  color: #d7e2e9;
+}
+.my-navbar .navbar-link:hover {
+  color: #e5dbdb;
+}
+
+@media (max-width: 767px) {
+  .my-navbar .navbar-nav .open .dropdown-menu > li > a {
+    color: #d7e2e9;
+  }
+  .my-navbar .navbar-nav .open .dropdown-menu > li > a:hover, .my-navbar .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #e5dbdb;
+  }
+  .my-navbar .navbar-nav .open .dropdown-menu > .active > a, .my-navbar .navbar-nav .open .dropdown-menu > .active > a:hover, .my-navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #e5dbdb;
+    background-color: #425766;
+  }
+}
+</style>
+
+
+{% endblock %}
