@@ -1,5 +1,5 @@
 # Molecule-Movies
-This project was not developed using git, however, this repository holds all of the necessary files to run/view the application. 
+This project was not developed using git, however, this repository holds all of the necessary files in order run/view the application. 
 
 
 ———————————————————————————————————————————————————————
