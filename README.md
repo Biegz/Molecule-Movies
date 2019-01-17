@@ -2,7 +2,7 @@
 This project was not developed using git, however, this repository holds all of the necessary files to run/view the application. 
 
 
-————————————————————————————————————————————————————————————————————————————————————————
+—————————————————————————————————————————————————————
 
 <h1>
 	Project report:
