@@ -30,3 +30,8 @@ This project was not developed using git, however, this repository holds all of 
 </h1>
 	Screenshots of the application are held within the screenshots folder. 
 
+<h1>
+	Entity Relationship Diagram:
+</h1>
+	The ERD folder contains the entity relationship diagrams, which consists of the 	MyWorkBench file and exported images. 
+
