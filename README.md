@@ -1,9 +1,9 @@
 # Molecule-Movies
 This project was not developed using git, however, this repository holds all of the necessary files in order run/view the application. 
 
-Welcome to Molecule Movies!
+			<b>Welcome to Molecule Movies!</b>
 
-Molecule Movies is a movie database and website. This was a Database Systems course project that was done for Stony Brook University completed in the fall of 2018.
+	Molecule Movies is a movie database and website. This was a Database Systems course project that was done for Stony Brook University completed in the fall of 2018.
 
 
 ———————————————————————————————————————————————————————
